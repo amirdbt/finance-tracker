@@ -17,6 +17,20 @@ body{
   color: #311b92;
   border: 2px solid #311b92;
 }
+
+.btn-success{
+  background: #00796b;
+  outline: none;
+  border: 2px solid #00796b;
+  transition: all .3s ease-in-out ;
+}
+
+.btn-success:hover{
+  background: #F7F7F7;
+  color: #00796b;
+  border: 2px solid #00796b;
+}
+
 .sidebar{
   height: 100vh;
   width: 300px;
@@ -56,4 +70,22 @@ ul li a{
 ul li a:hover{
   color: #e7e8e9;
   border-right: 5px solid burlywood;
+}
+.no-right-padding{
+  padding-right: 0 !important;
+}
+
+.no-left-padding{
+  padding-left: 0 !important;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.btn-search{
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.input-search{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
