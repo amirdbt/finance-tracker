@@ -40,8 +40,8 @@
   <div class="brandline"></div>
   <nav>
     <ul>
-      <li>  <a class="" aria-current="page" href="#">Home</a></li>
-      <li>  <a class="" aria-current="page" href="#">Home</a></li>
+      <li class="<%= 'active' if request.path == root_path %>">  <%= link_to 'Home',root_path %></li>
+      <li class="<%= 'active' if request.path == my_portfolio_path %>">   <%= link_to 'Portfolio',my_portfolio_path %></li>
       <li>  <a class="" aria-current="page" href="#">Home</a></li>
       <li>  <a class="" aria-current="page" href="#">Home</a></li>
       <li> <%= link_to 'Log out',destroy_user_session_path, method: :delete %> </li>

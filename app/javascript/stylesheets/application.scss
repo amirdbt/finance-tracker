@@ -69,6 +69,10 @@ ul li a{
 }
 ul li a:hover{
   color: #e7e8e9;
+  //border-right: 5px solid burlywood;
+}
+.active{
+  color: #e7e8e9;
   border-right: 5px solid burlywood;
 }
 .no-right-padding{
