@@ -1,0 +1,21 @@
+<table class="table table-hover mt-3 w-75">
+  <thead>
+  <tr>
+    <th>Ticker</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @tracked_stocks.each do |stock| %>
+    <tr>
+      <td><%=  stock.ticker  %>></td>
+      <td><%= stock.name %></td>
+      <td><%=  stock.last_price  %></td>
+      <td>Delete</td>
+    </tr>
+  <%  end  %>
+
+  </tbody>
+</table>
