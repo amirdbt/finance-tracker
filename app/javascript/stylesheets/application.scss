@@ -17,7 +17,18 @@ body{
   color: #311b92;
   border: 2px solid #311b92;
 }
+.btn-danger{
+  background: #c62828;
+  outline: none;
+  border: 2px solid #c62828;
+  transition: all .3s ease-in-out ;
+}
+.btn-danger:hover{
+  background: #F7F7F7;
+  color: #c62828;
+  border: 2px solid #c62828;
 
+}
 .btn-success{
   background: #00796b;
   outline: none;
