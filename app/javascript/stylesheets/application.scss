@@ -53,6 +53,18 @@ body{
   color: #311b92;
   border: 2px solid #311b92;
 }
+.btn-warning{
+  background: #f9a825;
+  color: #F7F7F7;
+  border: 2px solid #f9a825;
+  outline: none;
+  transition: all .3s ease-in-out;
+}
+.btn-warning:hover{
+  background: #F7F7F7;
+  color: #f9a825;
+  border: 2px solid #f9a825;
+}
 
 .sidebar{
   height: 100vh;
@@ -123,6 +135,11 @@ ul li a:hover{
 .stock{
   font-size: 18px;
 }
+
+.search-area{
+  margin-left: inherit;
+}
+
 @media screen and (max-width: 600px) {
   .sidebar{
     display: none;
