@@ -51,7 +51,7 @@ body{
 .brand{
   font-size: 1.5rem;
   text-align: center;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,4 +103,13 @@ ul li a:hover{
 .input-search{
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+.navbar{
+  height: 80px;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar{
+    display: none;
+  }
 }
