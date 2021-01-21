@@ -1,14 +1,14 @@
-<div class="d-inline-block w-50">
+<div class="d-inline-block w-100">
   <%= render 'layouts/messages' %>
 </div>
 <% if @stock %>
-  <div class="card card-header d-inline-block w-50 mt-3">
+  <div class="card card-header d-inline-block w-100 mt-3">
     <strong>Symbol: </strong> <%= @stock.ticker %>
     <strong>Name: </strong> <%= @stock.name %>
     <strong>Last Price: </strong> <%= @stock.last_price %>
     <% if current_user.can_track_stock?(@stock.ticker) %>
     <%= link_to 'Add to portfolio', user_stocks_path(user: current_user, ticker: @stock.ticker),
-                                    class: 'btn btn-success btn-xs', method: :post %>
+                                    class: 'btn btn-success btn-sm float-end', method: :post %>
       <% else %>
     <span class="badge bg-secondary">
       You are already tracking

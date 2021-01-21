@@ -41,6 +41,18 @@ body{
   color: #00796b;
   border: 2px solid #00796b;
 }
+.btn-info{
+  background: #311b92;
+  outline: none;
+  border: 2px solid #311b92;
+  transition: all .3s ease-in-out;
+  color: #F7F7F7;
+}
+.btn-info:hover{
+  background: #F7F7F7;
+  color: #311b92;
+  border: 2px solid #311b92;
+}
 
 .sidebar{
   height: 100vh;
