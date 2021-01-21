@@ -1,0 +1,7 @@
+<div class="w-75 h-75 mx-5  bg-white p-3 mt-5">
+  <h3 class="text-center">My Friends</h3>
+
+  <% unless @friends.empty? %>
+    <%= render 'friends/list' %>
+  <%  end %>
+</div>
