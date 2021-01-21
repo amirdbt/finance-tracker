@@ -13,7 +13,7 @@
   <body>
   <%= render 'layouts/navigation' if user_signed_in? %>
   <div class="container">
-    <%= render 'layouts/navbar' if user_signed_in? %>
+    <%#= render 'layouts/navbar' if user_signed_in? %>
     <%= render 'layouts/messages' %>
     <%= yield %>
   </div>

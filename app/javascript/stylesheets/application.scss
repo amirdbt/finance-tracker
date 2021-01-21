@@ -47,11 +47,12 @@ body{
   width: 300px;
   background: #0f1923;
   color: #e7e8e9;
+
 }
 .brand{
   font-size: 1.5rem;
   text-align: center;
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +108,9 @@ ul li a:hover{
 .navbar{
   height: 80px;
 }
-
+.stock{
+  font-size: 18px;
+}
 @media screen and (max-width: 600px) {
   .sidebar{
     display: none;
