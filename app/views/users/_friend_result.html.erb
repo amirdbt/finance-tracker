@@ -1,0 +1,14 @@
+<div class="d-inline-block w-75 mt-2">
+  <%= render 'layouts/messages' %>
+</div>
+
+<% if @friend %>
+  <div class="card card-header d-inline-block w-50 mt-3">
+    <strong>Email: </strong> <%= @friend.email %>
+    <strong>First Name: </strong> <%= @friend.first_name %>
+    <strong>Last name: </strong> <%= @friend.last_name %>
+    <%= link_to 'Add to portfolio', '#',
+                  class: 'btn btn-success btn-xs', method: :post %>
+
+  </div>
+<% end %>
