@@ -13,7 +13,8 @@
       <td><%=  friend.email  %></td>
       <td><%= friend.first_name %></td>
       <td><%=  friend.last_name  %></td>
-      <td> <%= link_to 'Unfollow',friendship_path(friend),method: :delete, data: {confirm: 'Are you sure you want to unfollow'},
+      <td>  <%= link_to 'View Profile', user_path(friend), class:  'btn btn-success btn-sm'  %>
+        <%= link_to 'Unfollow',friendship_path(friend),method: :delete, data: {confirm: 'Are you sure you want to unfollow'},
                        class: 'btn btn-sm btn-danger'  %> </td>
     </tr>
   <%  end  %>

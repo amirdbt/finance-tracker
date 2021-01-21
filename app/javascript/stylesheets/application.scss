@@ -3,8 +3,11 @@
 body{
   background: #f1f3f4;
   display: flex;
+  //overflow: hidden;
 }
-
+//.container{
+//  overflow-y: auto;
+//}
 .btn-primary{
   background: #311b92;
   outline: none;
@@ -65,7 +68,18 @@ body{
   color: #f9a825;
   border: 2px solid #f9a825;
 }
-
+.btn-secondary{
+  background: #616161;
+  color: #F7F7F7;
+  border: 2px solid #616161;
+  outline: none;
+  transition: all .3s ease-in-out;
+}
+.btn-secondary:hover{
+  background: #F7F7F7;
+  color: #616161;
+  border: 2px solid #616161;
+}
 .sidebar{
   height: 100vh;
   width: 300px;
@@ -99,7 +113,7 @@ ul li a{
   font-weight: 500;
   padding: 15px 0 15px 50px;
   position: relative;
-  z-index: 1;
+  z-index: 5;
   color: #5a6673;
   transition: all .3s ease-in-out;
 }

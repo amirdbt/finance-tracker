@@ -8,14 +8,14 @@
       <tbody>
       <% @friends.each do |friend| %>
         <tr>
-         <td> <strong>Name: </strong> <%= friend.full_name %></td>
-         <td> <strong>Email: </strong> <%= friend.email %> </td>
-         <td colspan="2">  <%= link_to 'View Profile', '#', class:  'btn btn-success btn-sm'  %>
+         <td> <strong >Name: </strong> <span class="fw-light"><%= friend.full_name %></span> </td>
+         <td> <strong >Email: </strong> <span class="fw-light"> <%= friend.email %> </span></td>
+         <td colspan="2">  <%= link_to 'View Profile', user_path(friend), class:  'btn btn-success btn-sm'  %>
            <% if current_user.not_friends_with?(friend) %>
-          <%= link_to 'Follow', '#',
+          <%= link_to 'Follow', friendships_path(friend: friend),
                       class: 'btn btn-info btn-sm', method: :post %>
              <% else %>
-           <span class="text-muted">Following</span>
+           <span class="text-muted fs-6 fw-light">Following</span>
            <% end %>
          </td>
         </tr>
