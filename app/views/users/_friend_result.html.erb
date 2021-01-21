@@ -3,10 +3,10 @@
 </div>
 
 <% if @friend %>
-  <div class="card card-header d-inline-block w-50 mt-3">
-    <strong>Email: </strong> <%= @friend.email %>
-    <strong>First Name: </strong> <%= @friend.first_name %>
-    <strong>Last name: </strong> <%= @friend.last_name %>
+  <div class="card card-header d-inline-block w-75">
+    <strong>Email: </strong> <%= @friend %>
+    <strong>First Name: </strong> <%= @friend %>
+    <strong>Last name: </strong> <%= @friend %>
     <%= link_to 'Add to portfolio', '#',
                   class: 'btn btn-success btn-xs', method: :post %>
 
